@@ -55,7 +55,7 @@ The HLS (HTTP Live Streaming) video delivery system requires careful architectur
 
 ### Content Delivery Network (CDN)
 
-- **Multi-CDN strategy**: Failover between cdn.jsdelivr.net and cdn.discordapp.com
+- **Multi-CDN strategy**: Failover between Primary CDN and Secondary CDN providers (e.g., Cloudflare, Fastly, Akamai)
 - **Edge proximity**: Content served from nearest edge location
 - **Persistent connections**: Keep-alive connections reduce TLS handshake overhead
 
@@ -168,6 +168,7 @@ The HLS (HTTP Live Streaming) video delivery system requires careful architectur
 
 ## References
 
-- [HLS Specification](https://datatracker.ietf.org/doc/html/rfc8216)
-- [CDN Best Practices](https://web.dev/content-delivery-networks/)
-- [Video Streaming at Scale](https://netflixtechblog.com/)
+- [HLS Specification (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216)
+- [CDN Best Practices - web.dev](https://web.dev/content-delivery-networks/)
+- [Adaptive Streaming Overview](https://developer.apple.com/streaming/)
+- [Video Streaming Performance Metrics](https://www.akamai.com/glossary/what-is-video-streaming)
